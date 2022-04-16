@@ -8,8 +8,8 @@
 public class Shoes
 {
     private String brand;
-    private int size;
     private String color;
+    private double size;
     private double price;
     
     public Shoes()
@@ -19,24 +19,24 @@ public class Shoes
       this.color = "";
       this.price = -1;
     }
-    public Shoes(String brand, int size, String color, double price)
+    public Shoes(String brand, String color, double size, double price)
     {
       this.brand = brand;
-      this.size = size;
       this.color = color;
+      this.size = size;
       this.price = price;
     }
     public String getBrand()
     {
         return this.brand;
     }
-    public int getSize()
-    {
-        return this.size;
-    }
-    public String getColor()
+     public String getColor()
     {
         return this.color;
+    }
+    public double getSize()
+    {
+        return this.size;
     }
     public double getPrice()
     {
@@ -46,13 +46,13 @@ public class Shoes
     {
        this.brand = b; 
     }
-    public void setSize(int s)
-    {
-      this.size = s;  
-    }
     public void setColor(String c)
     {
         this.color = c;
+    }
+    public void setSize(double s)
+    {
+      this.size = s;  
     }
     public void setPrice(double p)
     {
